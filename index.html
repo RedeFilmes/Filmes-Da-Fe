@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filmes da Fé - Sua plataforma de streaming de filmes e séries inspirados na Bíblia">
+    <meta name="keywords" content="filmes cristãos, séries bíblicas, streaming cristão, conteúdo religioso, filmes evangélicos">
+    <meta property="og:title" content="Filmes da Fé - Streaming Cristão">
+    <meta property="og:description" content="Assista aos melhores filmes e séries baseados na Bíblia">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Filmes da Fé - Streaming Cristão">
+    <meta name="twitter:description" content="Assista aos melhores filmes e séries baseados na Bíblia">
+    <title>Filmes da Fé - Streaming Cristão</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles/global.css" rel="stylesheet">
+    <link href="styles/components.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Load data first -->
+    <script type="text/babel" src="utils/categories/genesis.js"></script>
+    <script type="text/babel" src="utils/categories/exodus.js"></script>
+    <script type="text/babel" src="utils/categories/leviticus.js"></script>
+    <script type="text/babel" src="utils/categories/numbers.js"></script>
+    <script type="text/babel" src="utils/categories/deuteronomy.js"></script>
+    <script type="text/babel" src="utils/categories/joshua.js"></script>
+    <script type="text/babel" src="utils/categories/judges.js"></script>
+    <script type="text/babel" src="utils/categories/ruth.js"></script>
+    <script type="text/babel" src="utils/categories/1samuel.js"></script>
+    <script type="text/babel" src="utils/categories/2samuel.js"></script>
+    <script type="text/babel" src="utils/data.js"></script>
+
+    <!-- Then load components -->
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/MovieCard.js"></script>
+    <script type="text/babel" src="components/MovieCarousel.js"></script>
+    <script type="text/babel" src="components/MovieGrid.js"></script>
+    <script type="text/babel" src="components/MoviePlayer.js"></script>
+    <script type="text/babel" src="components/SubscriptionModal.js"></script>
+    <script type="text/babel" src="components/AboutModal.js"></script>
+    <script type="text/babel" src="components/LoginModal.js"></script>
+    <script type="text/babel" src="components/RegisterModal.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+
+    <!-- Finally load the main app -->
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

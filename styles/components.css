@@ -1,0 +1,62 @@
+.movie-card {
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.hero-section {
+    background: linear-gradient(to right, #1e293b, #0f172a);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fcd34d;
+    transition: width 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+/* Responsive carousel styles */
+@media (max-width: 768px) {
+    .movie-card {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
+/* Smooth scrolling for carousel */
+.carousel-container {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Carousel navigation buttons */
+.carousel-button {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.carousel-container:hover .carousel-button {
+    opacity: 1;
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+    .mobile-menu {
+        backdrop-filter: blur(8px);
+        background-color: rgba(15, 23, 42, 0.9);
+    }
+}
